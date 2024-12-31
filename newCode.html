@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Bootstrap Tutorial</title>
+    <style>
+      .content {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 20px;
+        background-color: #f9f9f9;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="jumbotron bg-secondary text-black">
+        <h1>Developer's Jungle Gym!</h1>      
+        <p>Swing into code, climb to creativity.</p>
+        <p>A creative playground for developers to explore coding tips, Bootstrap tricks, and UI/UX inspiration. Whether you're swinging through tutorials, climbing over debugging challenges, or balancing new design ideas, this blog is where creativity meets code.</p>
+      </div>          
+    </div>
+
+    <!-- First Row -->
+    <div class="row">
+        <div class="col">
+            <img onclick="loadContent('Coding Basics and Tutorials')" src="./pictures/Coding.jpg" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="Coding Basics and Tutorials">
+        </div>
+        <div class="col">
+            <img onclick="loadContent('Elegant Layouts with Bootstrap')" src="./pictures/Bootstrap.jpg" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="Bootstrap-Focused Content">
+        </div>
+        <div class="col">
+            <img onclick="loadContent('Full Stack Integration Techniques')" src="./pictures/Advanced Techniques.jpg" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="Advanced Techniques">
+        </div>
+        <div class="col">
+            <img onclick="loadContent('Rapid Growth Tips for Developers')" src="./pictures/Career Growth for Developers.jpg" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="Career Growth for Developers">
+        </div>
+        <div class="col">
+            <img onclick="loadContent('Debugging Common Challenges')" src="./pictures/Debug.webp" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="Debugging and Problem-Solving">
+        </div>
+    </div>
+    
+    <!-- Second Row -->
+    <div class="row">
+        <div class="col">
+            <img onclick="loadContent('Designing Unique Bootstrap Interfaces')" src="./pictures/Innovation and Creativity in Development.jpg" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="Innovation and Creativity in Development">
+        </div>
+        <div class="col">
+            <img onclick="loadContent('Boosting Productivity with Tools')" src="./pictures/Productivity.webp" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="Productivity and Tools">
+        </div>
+        <div class="col">
+            <img onclick="loadContent('Turning Projects into Portfolios')" src="./pictures/Project Ideas and Challenges.webp" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="Project Ideas and Challenges">
+        </div>
+        <div class="col">
+            <img onclick="loadContent('Creating Intuitive UI/UX Designs')" src="./pictures/u x designer.webp" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="UI/UX Design">
+        </div>
+        <div class="col">
+            <img onclick="loadContent('Turning Passion into Career')" src="./pictures/insp.jpg" class="img-fluid" style="height: 200px; object-fit: cover; border: 3px solid #333; margin-bottom: 15px;" alt="Community and Inspiration">
+        </div>
+    </div>
+    
+    <!-- Dynamic Content Section -->
+    <div id="content-section" class="container content">
+      <p>Click on any image above to load the corresponding content here.</p>
+    </div>
+
+    <div class="container bg-light text-dark">
+      <h1>Keep coding, keep playing - the jungle gym of development is always open!</h1>
+      <p>A perfect reflection of the playful yet passionate spirit of development. It invites readers to embrace learning and creativity in coding while reminding them that the journey of growth never stops, just like a jungle gym that is always there to explore.</p>
+      <blockquote class="blockquote">
+        <p>Adventuring through code, one swing at a time.</p>
+        <footer class="blockquote-footer">Nicole Molope</footer>
+      </blockquote>
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+      function loadContent(section) {
+        const content = {
+          "Coding Basics and Tutorials": "<h2>Coding Basics and Tutorials</h2><p>Serves as the foundation for every aspiring developer's journey. It’s all about breaking down complex concepts into simple, digestible steps. From learning your first Hello World! to understanding core programming principles, this section is designed to help you build confidence and solidify your skills, one line of code at a time. Whether you’re just starting or brushing up on the basics, this is your go-to playground for essential coding knowledge!.</p>",
+          "Elegant Layouts with Bootstrap": "<h2>Elegant Layouts with Bootstrap</h2><p>This is where functionality meets aesthetics. Discover how to leverage Bootstrap's powerful grid system, pre-designed components, and responsive utilities to create visually stunning and user-friendly designs. From sleek navigation bars to perfectly aligned content, this section helps you craft layouts that are not just functional but effortlessly stylish. Elevate your web design game and let your creativity shine with Bootstrap!.</p>",
+          "Full Stack Integration Techniques": "<h2>Full Stack Integration Techniques</h2><p>Dives into the art of combining front-end elegance with back-end power. Learn how to seamlessly integrate Bootstrap's responsive designs with robust back-end frameworks like Node.js, Django, or Laravel. From building dynamic web applications to creating APIs that interact beautifully with your user interfaces, this section equips you with the tools and techniques to become a well-rounded full-stack developer. Transform your ideas into fully functional, end-to-end solutions!.</p>",
+          "Rapid Growth Tips for Developers": "<h2>Rapid Growth Tips for Developers</h2><p>Is your roadmap to leveling up in the tech world. It’s not just about coding faster—it’s about growing smarter. From sharpening your skills through continuous learning to building a standout portfolio that tells your story, this section is packed with tips that help you thrive. You’ll learn how to stay ahead of industry trends, grow your network, and gain confidence to tackle new challenges. Whether you're just starting or pushing toward the next step, these insights will help you take meaningful strides in your developer journey. Growth is all about consistency and curiosity—let’s make sure you’re always moving forward!.</p>",
+          "Debugging Common Challenges": "<h2>Debugging Common Challenges</h2><p>Is about turning frustration into growth. Every developer hits a roadblock, whether it’s a pesky bug or an issue that’s hard to pin down. This section will walk you through practical, approachable ways to tackle those challenges. With a calm mindset and the right tools, you’ll learn how to pinpoint problems and fix them efficiently. Debugging isn't just about solving issues; it's about learning how to think critically and embrace the problem-solving process. You'll come out stronger, more confident, and ready to tackle the next bug!.</p>",
+          "Designing Unique Bootstrap Interfaces": "<h2>Designing Unique Bootstrap Interfaces</h2><p>Invites you to think beyond the basics and truly personalize your design. Bootstrap gives you a solid foundation, but the magic happens when you put your unique spin on it. In this section, you'll discover how to customize components, use creative color schemes, and design intuitive layouts that reflect your personal style. Whether you’re designing a simple landing page or a complex web app, these tips will help you make your interfaces stand out while keeping them functional and user-friendly.</p>",
+          "Boosting Productivity with Tools": "<h2>Boosting Productivity with Tools</h2><p>Is all about working smarter, not harder. Discover essential developer tools and techniques that streamline your workflow, from powerful code editors and version control systems to time-saving browser extensions and automation scripts. Learn how to organize your tasks, debug efficiently, and collaborate seamlessly. With the right tools in your arsenal, you'll maximize efficiency, stay focused, and take your productivity to the next level!.</p>",
+          "Turning Projects into Portfolios": "<h2>Turning Projects into Portfolios</h2><p>Is about more than just showcasing your work—it’s about telling your story as a developer. Every project is an opportunity to highlight your growth, your skills, and your creativity. In this section, you'll learn how to present your work in a way that not only shows what you’ve done but also reflects who you are as a developer. From polished case studies to clean, well-commented code, you’ll discover how to turn every project into a portfolio piece that stands out to employers and clients alike..</p>",
+          "Creating Intuitive UI/UX Designs": "<h2>Creating Intuitive UI/UX Designs</h2><p>Focuses on the art of crafting user interfaces that are not only visually appealing but also easy and enjoyable to navigate. Learn the principles of user-centered design, from wireframing and prototyping to usability testing and feedback loops. This section will guide you through designing intuitive layouts, optimizing user flows, and creating seamless experiences that keep users engaged. Whether you're a beginner or an experienced designer, these tips will help you build interfaces that users love to interact with!.</p>",
+          "Turning Passion into Career": "<h2>Turning Passion into Career</h2><p>Turning your love for ICT into a career is an exciting journey that starts with curiosity and a willingness to learn. Whether you are passionate about coding, designing user-friendly apps, managing networks, or analyzing data, there is a place for you in this ever-growing field.Start small—build a personal project, experiment with tools and technologies, or dive into online courses that spark your interest. Along the way, donnot just focus on technical skills; develop soft skills like communication and teamwork, which are just as valuable in the ICT world.As you grow, showcase your work. Create a portfolio of projects that highlight what makes you unique, and donnot be afraid to put yourself out there—join tech meetups, collaborate on open-source projects, or connect with others on platforms like LinkedIn.The most important part? Stay curious. Technology changes fast, and the more you explore and adapt, the closer you will get to turning your passion into a fulfilling career. Remember, every great ICT professional started with a spark of curiosity—just like you.</p>"
+
+        };
+
+        const contentSection = document.getElementById("content-section");
+        contentSection.innerHTML = content[section] || "<p>Content not found. Please try again.</p>";
+      }
+    </script>
+
+    <!-- Optional JavaScript -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    
+  </body>
+</html>
